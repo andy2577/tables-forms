@@ -19,28 +19,28 @@
     </nav>
     <section>
         <form action="https://formspree.io/andy25771@gmail.com" method="POST">
-            <label for="name"><h3>Name: </h3></label><br>
-            <input type="text" name="name" id="name" required pattern="[A-Za-z]" /><br>
+            <label for="name"><b>Name: </b></label><br>
+            <input type="text" name="name" id="name" required pattern="[A-Za-z]" /><br><br>
             <!-- Disagree -->
-            <label for="disagree"><h3>Do you disagree with people a lot? :</h3></label><br>
+            <label><b>Do you disagree with people a lot? :</b></label><br>
             <input type="radio" name="disagree" value="strongly_disagree" checked />Strongly Disagree<br>
             <input type="radio" name="disagree" value="disagree" />Disagree<br>
             <input type="radio" name="disagree" value="neither" />Neither<br>
-            <input type="radio" name="disagree" value="agree" />Agree<br>
+            <input type="radio" name="disagree" value="agree" />Agree<br><br>
             <!-- Can you count -->
-            <lable for="count">
-                <h3>Can you count to 10? :</h3>
-            </lable>
+            <label>
+                <b>Can you count to 10? :</b><br>
+            </label>
             <input type="radio" name="count" value="yes" />Yes<br>
-            <input type="radio" name="count" value="no" />No<br>
+            <input type="radio" name="count" value="no" />No<br><br>
             <!-- Greatest accomplishment -->
-            <label for="accomplishment"><h3>What is Your Greatest Accomplishment?</h3></label><br>
-            <textarea name="accomplishment" id="accomplishment"></textarea><br>
+            <label for="accomplishment"><b>What is Your Greatest Accomplishment?</b></label><br>
+            <textarea name="accomplishment" id="accomplishment"></textarea><br><br>
             <!-- Paranoid -->
-            <label for="paranoid"><h3>Are You Paranoid?</h3></label> No
-            <input type="range" name="paranoid" min="0" max="10">Yes<br>
+            <label><b>Are You Paranoid?</b></label><br> No
+            <input type="range" name="paranoid" min="0" max="10">Yes<br><br>
             <!-- Color of the Sun-->
-            <label><h3>What color is the Sun?</h3></label>
+            <label><b>What color is the Sun?</b></label><br>
             <input list="sun_color" name="sun_color">
             <datalist id="sun_color">
                 <option value="Yellow">
@@ -48,10 +48,10 @@
                 <option value="Blue">
                 <option value="Purple">
                 <option value="Green">
-            </datalist><br>
+            </datalist><br><br>
             <!-- Favorite color-->
-            <label for=""><h3>Pick your Favorite Color: </h3></label>
-            <input type="color" name="favcolor" value="#00e5ff"><br>
+            <label><b>Pick your Favorite Color: </b></label><br>
+            <input type="color" name="favcolor" value="#00e5ff"><br><br>
             <br>
             <input type="submit" value="Submit" />
         </form>
