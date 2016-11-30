@@ -1,9 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> </title>
-    </head>
-    <body>
 
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Survey</title>
+</head>
+
+<body>
+    <header>
+        <h1>Funny Survey :)</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">top</a></li>
+            <li><a href="#">middle</a></li>
+            <li><a href="#">bottom</a></li>
+        </ul>
+    </nav>
+    <section>
+        <form action="https://formspree.io/andy25771@gmail.com" method="POST">
+            <label for="name"><h3>Name: </h3></label><br>
+            <input type="text" name="name" id="name" required pattern="[A-Za-z]" /><br>
+            <!-- Disagree -->
+            <label for="disagree"><h3>Do you disagree with people a lot? :</h3></label><br>
+            <input type="radio" name="disagree" value="strongly_disagree" checked />Strongly Disagree<br>
+            <input type="radio" name="disagree" value="disagree" />Disagree<br>
+            <input type="radio" name="disagree" value="neither" />Neither<br>
+            <input type="radio" name="disagree" value="agree" />Agree<br>
+            <!-- Can you count -->
+            <lable for="count">
+                <h3>Can you count to 10? :</h3>
+            </lable>
+            <input type="radio" name="count" value="yes" />Yes<br>
+            <input type="radio" name="count" value="no" />No<br>
+            <!-- Greatest accomplishment -->
+            <label for="accomplishment"><h3>What is Your Greatest Accomplishment?</h3></label><br>
+            <textarea name="accomplishment" id="accomplishment"></textarea><br>
+            <!-- Paranoid -->
+            <label for="paranoid"><h3>Are You Paranoid?</h3></label> No
+            <input type="range" name="paranoid" min="0" max="10">Yes<br>
+            <!-- Color of the Sun-->
+            <label><h3>What color is the Sun?</h3></label>
+            <input list="sun_color" name="sun_color">
+            <datalist id="sun_color">
+                <option value="Yellow">
+                <option value="Popsicle">
+                <option value="Blue">
+                <option value="Purple">
+                <option value="Green">
+            </datalist><br>
+            <!-- Favorite color-->
+            <label for=""><h3>Pick your Favorite Color: </h3></label>
+            <input type="color" name="favcolor" value="#00e5ff"><br>
+            <br>
+            <input type="submit" value="Submit" />
+        </form>
+    </section>
+    <footer>
+        <a href="http://aplus.com/a/funny-questionnaires-answers?no_monetization=true" target="_blank">Source "A Plus"</a>
+    </footer>
+</body>
+
 </html>
