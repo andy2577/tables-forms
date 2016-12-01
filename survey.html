@@ -22,20 +22,22 @@
             <label for="name"><b>Name: </b></label><br>
             <input type="text" name="name" id="name" required pattern="[A-Za-z]" /><br><br>
             <!-- Disagree -->
-            <label><b>Do you disagree with people a lot? :</b></label><br>
-            <input type="radio" name="disagree" value="strongly_disagree" checked />Strongly Disagree<br>
-            <input type="radio" name="disagree" value="disagree" />Disagree<br>
-            <input type="radio" name="disagree" value="neither" />Neither<br>
-            <input type="radio" name="disagree" value="agree" />Agree<br><br>
+            <fieldset>
+                <legend><b>Do you disagree with people a lot? :</b></legend>
+                <input type="radio" name="disagree" value="strongly_disagree" checked id="strongly_disagree" /><label for="strongly_disagree">Strongly Disagree</label><br>
+                <input type="radio" name="disagree" value="disagree" id="disagree" /><label for="disagree">Disagree</label><br>
+                <input type="radio" name="disagree" value="neither" id="neither" /><label for="neither">Neither</label><br>
+                <input type="radio" name="disagree" value="agree" id="agree" /><label for="agree">Agree</label><br><br>
+            </fieldset>
             <!-- Can you count -->
-            <label>
-                <b>Can you count to 10? :</b><br>
-            </label>
-            <input type="radio" name="count" value="yes" />Yes<br>
-            <input type="radio" name="count" value="no" />No<br><br>
+            <fieldset>
+                <legend><b>Can you count to 10? :</b></legend>
+            <input type="radio" name="count" value="yes" id="yes"/><label for="yes">Yes</label><br>
+            <input type="radio" name="count" value="no" id="no"/><label for="no">No</label>
+            </fieldset>
             <!-- Greatest accomplishment -->
             <label for="accomplishment"><b>What is Your Greatest Accomplishment?</b></label><br>
-            <textarea name="accomplishment" id="accomplishment"></textarea><br><br>
+            <textarea name="accomplishment" id="accomplishment" rows="6" cols="50"></textarea><br><br>
             <!-- Paranoid -->
             <label><b>Are You Paranoid?</b></label><br> No
             <input type="range" name="paranoid" min="0" max="10">Yes<br><br>
@@ -56,6 +58,13 @@
             <input type="submit" value="Submit" />
         </form>
     </section><br><br>
+    <nav>
+        <ol>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ol>
+    </nav>
     <footer>
         <a href="http://aplus.com/a/funny-questionnaires-answers?no_monetization=true" target="_blank">Source "A Plus"</a>
     </footer>
